@@ -1,0 +1,32 @@
+
+#menu{
+    float: left; /* o atributo especifica que o elemento deve flutuar em relação aos outros elementos, o elemento não não fica no fluxo normal dos objetos. Nesse exemplo as imagens irão flutuar e ficar a esquerda de qualquer elemento sbsequente a um elemento "float". */
+    margin-top: 93px; /* adiciona valor para a margem superior do elemento*/
+    width: 453px; /*adiciona largura, nesse caso ao menu*/
+}
+
+#menu a:hover /*o elemento hover é acionado quando o mouse está sobre o link */ {
+    color: #000; /*cor da fonte*/
+}
+
+#menu ul {
+    list-style: none; /*configura o tipo de marcador de list. O 'none' acusa que os marcadores serão retirados da lista*/
+    background: linear-gradient(to bottom, #ddd, #666); /*nova configuração do CCS3 para cor de fundo*/
+    padding: 0px;/*configura o tamanho dos lados do elemento*/
+    margin: 0px; /*configura as margens do elemento*/
+}
+
+#menu li {
+    height: 57px; /*medida da altura do elemento*/
+    display: table-cell; /*configura o elemento para se comportar com se fosse a célula de uma tabela*/
+    text-align: center; /*alinhamento horizontal centralizado*/
+    vertical-align: middle; /*alinhamento vertical no meio, como estivesse no meio da célula*/ 
+    width: 150px; /*medida da largura*/
+    border-right: 1px solid #062; /*configura a borda direita (espessura, linha sólida e cor verde)*/
+}
+
+#menu ul li a {
+    text-decoration: none; /*retira a formatação do link, remove o sublinhado padrão do link*/
+    font-size: 20px; /*tamanho da fonte*/
+    color: #fff; /*cor padrão do link*/
+}

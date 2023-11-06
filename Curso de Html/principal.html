@@ -1,0 +1,1026 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="imagens/MODELO DE ESTRUTURA.png">
+    <title>Curso de HTML5 - conclusão</title>
+</head>
+<style>
+    h1 {
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background-color:rgb(7,190,163);
+    width: 90%;
+    margin: 0px 0px 0 28px;
+    padding: 0 1rem 0 1rem;
+    border: 3px solid;
+    border-radius: 0.5rem;
+    border-color:rgb(7,190,163);
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: flex-start;;
+   }
+   
+   aside {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    width: 90%;
+    margin: 0px 0px 0 28px;
+    padding: 0 2rem 0 0;
+    border: 3px solid;
+    border-radius: 0.5rem;
+    border-color: rgb(7,190,163);
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    }
+
+    h3 {color: rgb(7,190,163);
+        margin: 20px 28px 20px 28px;
+    }
+
+    h5 li, a{color: rgb(7,190,163)
+    }
+
+    h6 {color:black;
+        margin: 0px 0px 0 12px;
+        padding: 0 1rem 0 1rem;
+        }
+          
+    </style>
+<body>
+    <h1><strong>Curso de HTML5 - Aprendendo o Básico</strong></h1>
+    
+        <aside>
+            <h3><a name="#indice"><b>Índice</b></a></h3>
+                <h5>
+                    <ol>
+                        <li><a href="ferramentas">Ferramentas facilitadoras de desenvolvimento</a></li>
+                        <li><a href="inspecoes">Inspeção de Elementos</a></li>
+                        <li><a href="estruturas">Estrutura Básica do HTML</a></li>
+                        <li><a href="tags">TAGS</a></li>
+                        <li><a href="atributos">Atributos das TAGS</a></li>
+                        <li><a href="textos">TAGS de Textos</a></li>
+                        <li><a href="listas">Listas</a></li>
+                        <li><a href="ligacoes">Links</a></li>
+                    </ol>
+                </h5>
+        </aside>
+        <div>
+            <h3>
+                <a name="#ferramentas"><strong><u>Ferramentas facilitadoras de desenvolvimento</u></strong></a>
+            </h3>
+            <h6><a href="indice">[VOLTAR]</a></h6>
+
+            <ul>
+                <li><strong><mark>VSCode:</mark></strong>é uma ferramentas utilizada para codificar usando diversos tipos de programas de linguagem;</li> <br>
+                <li><strong><mark><i>Live Server:</i></mark></strong> é um programa que pode ser instalado dentro do VSCode para visualizar sua codificação como página local host dentro do navegador. Para abri-lo basta clicar com o botão direito no arquivo principal 'xxx.html' que foi criado e pedir para abrir como <i>live Server</i>;</li> <br>
+                <li><strong><mark>Http-server:</mark></strong> faz o mesmo que o <i>Live Server</i>, porém o mesmo é acionado no CLI do terminal após sua instalação.</li> 
+            </ul>
+            <h3>
+                <a name="#inspecoes"><strong><u>Inspeção de Elementos</u></strong></a>
+            </h3>
+            <h6><a href="indice">[VOLTAR]</a></h6>
+            <p>Essa ferramenta chamada ferramenta do desenvolver, ela pode ser aberta clicando com o botão direito na página que está sendo trabalhada ou alguma página da internet e depois em inspecionar elementos ou clique em F12.</p>
+            <h3>
+                <a name="#estruturas"><strong><u>Estrutura Básica do HTML</u></strong></a>
+            </h3>
+            <h6><a href="indice">[VOLTAR]</a></h6>
+            <ol>
+                <li>Abra o <b>VSCode</b>  e no explorador crie um novo arquivo para codificar sua página;</li><br>
+                <li>Criado o arquivo, monte a estrutura do <b>HTML</b>. No caso do VSCode digitando <mark>'html5'</mark> será aberto uma estrutura pré definida.
+                </li><br>
+                <li>A estrutura de codificação <b>HTML</b> inicia com a tag <mark>“.html>”</mark> e finaliza com a tag de fechamento <mark>“./html>”.</mark>
+                </li><br>
+                <li>Dentro da estrutura HTML tem-se a tag <mark>“.head>”</mark>  e a <mark>".Body>"</mark>, onde a tag <mark>“.head>”</mark> inicia o cabeçalho que possui informações carregadas antes de serem mostradas para o usuário e fecha com <mark>“./head>”</mark> e a tag <mark>“.body>”</mark> que é o corpo da página, onde são mostradas as informações para o usuário e que são fechadas com a tag <mark>“./body>”</mark>.<br>
+                </li><br>
+                <li>
+                    Ainda, dentro da tag <b>head</b> encontra-se o <mark>“.title>”</mark> que é o título da página, usado para ser buscado na internet.
+                </li>
+
+            </ol>
+            <h3>
+                <a name="#tags"><strong><u>TAGS</u></strong></a>
+            </h3>
+            <h6><a href="indice">[VOLTAR]</a></h6>
+                <ul>
+                    <li><strong><u>.html> ./html></u></strong> mostra a página HTML. Possui tag de fechamento;</li>
+                    <li><strong><u>.head> ./head></u></strong> mostra o cabeçalho da página. Possui tag de fechamento;
+                    </li>
+                    <li><strong><u>.body> ./body></u></strong> mostra o corpo da página. Possui tag de fechamento;
+                    </li>
+                    <li><strong><u>.i> ./i></u></strong> coloca o texto/palavra em itálico. Possui tag de fechamento;
+                    </li>
+                    <li><strong><u>.strong> ./strong></u></strong> coloca o texto/palavra em negrito e dá ênfase a palavra/texto. Possui tag de fechamento;
+                    </li>
+                    <li><strong><u>.b> ./b></u></strong> coloca o texto/palavra em negrito. Possui tag de fechamento;
+                    </li>
+                    <li><strong><u>.input ></u></strong> abre um campo para preenchimento e não possui tag de fechamento;
+                    </li>
+                    <li><strong><u>.img /></u></strong> referencia uma imagem e essa tag é aberta e fechada no mesmo campo;
+                    </li>
+                     
+                </ul>
+            
+            <h3>
+                <a name="#atributos"><strong><u>Atributos das TAGS</u></strong></a>
+            </h3>
+            <h6><a href="indice">[VOLTAR]</a></h6>
+                <p><b>Atributos</b> dão valor as tags e possuem vários ligados a outros programas como CSS e JS. Alguns exemplos de atributos estão citados abaixo.</p>
+                <ul>
+                    <li><strong>id:</strong>  é um atributo de identificação de uma determinada tag e que também é usado no JS.
+                    </li><br>
+                    <blockquote>
+                        Ex: .strong id = “titulo”>;
+                    </blockquote>
+                    <li><strong>class:</strong>  é um atributo voltado para o CSS que define uma classe de comando que serão alterados de mesma forma;
+                    </li><br>
+                    <blockquote>
+                        Ex: .strong class = “titulo”>;
+                    </blockquote>
+                    <li><strong>style:</strong> é um atributo para estilizar uma determinada tag e que também é usado no CSS.
+                    </li><br>
+                    <blockquote>
+                        Ex: .strong style= “color:blue;”>;
+                    </blockquote>
+                    <li><strong>src (search) :</strong> é um atributo de busca que define o caminho de um arquivo na internet ou em um arquivo local. ;
+                    </li><br>
+                    <blockquote>
+                        Ex: .img src=”htttps://www.dio.com/Dio.me”/>
+                    </blockquote> 
+                    <li><strong>type :</strong> é um atributo específico da tag .input> e que classifica o campo como: text, number, color e outros.
+                    </li><br>
+                    <blockquote>
+                        Ex: .input type=”text”> 
+                    </blockquote> 
+                </ul>
+                <h3>
+                    <a name="#textos"><strong><u>TAGS de Textos</u></strong></a>
+                </h3>
+                <h6><a href="indice">[VOLTAR]</a></h6>
+                    <p>São tipografias para o HTML. Alguns exemplos abaixos.</p>
+                    <ul>
+                        <li>.h1> primeiro título ./h1>;</li>
+                        <li>.h2> subtítulo ./h2>;</li>
+                        <li>.h3> subtítulo ./h3>;</li>
+                        <li>.h4> subtítulo ./h4>;</li>
+                        <li>.h5> subtítulo ./h5>;</li>
+                        <li>.h6> subtítulo ./h6>;</li>
+                        <li>.p> corpo de um texto iniciado por um parágrafo ./p>;</li>
+                        <li>.blockquote> serve para fazer uma citação ./blockquote></li>;
+                        <li>.strong> deixa o texto/palavra em negrito ./strong></li>;
+                        <li>.u> para sublinhar ./u></li>;
+                        <li>.i> para colocar a palavra/texto em itálico ./i></li>;
+                        <li>	.sup> valor elevado (potência) ./sup>;  
+                            <blockquote> EX: x^2</blockquote>
+                        </li>
+                        <li> .sub> valor abaixo ./sub>; 
+                            <blockquote> EX: x_2 </blockquote>
+                        </li>
+                        <li>.mark> estilo marca texto ./mark></li>;
+                        <li>.sup> deixa o texto/palavra acima de outro texto ./sup>;</li>
+                            <p><b>Obs.:</b> entre as tags <mark>'h'</mark> e <mark>p</mark>o próprio navegador inclui margem entre os títulos e os textos e ainda aplica responsividade. Mais tags podem ser encontradas no site <a href= www.w3schools.com.>W3Schools.</a>
+                            </p>
+                    </ul>
+                    <h3>
+                        <a name="#listas"><strong><u>Listas</u></strong></a>
+                    </h3>
+                    <h6><a href="indice">[VOLTAR]</a></h6>
+                        <p>Existe dois tipos de listas: a ordenada 'ol' e não-ordenada 'ul'.</p>
+                            <ul>
+                                <li>
+                                    <b>Lista ordenada (.ol> ./ol>):</b> possui a característica de precisar de uma tag da lista filha <mark>.li></mark> para que a mesma funcione. O nome de lista ordenada se dá pelo fato de aparecer com uma numeração ordenada na frente dos itens listados.
+                                    <blockquote>
+                                        <b><u>Ex1:</u></b><br>
+                                        
+                                        ol><br>
+                                        li> cabeça /li><br>
+                                        li> ombro /li><br>
+                                        li> pé /li><br>
+                                        /ol><br>
+
+                                        <b><u>Resultado:</u></b><br>
+
+                                        <ol>
+                                        <li> cabeça </li>
+                                        <li> ombro </li>
+                                        <li> pé </li>
+                                        </ol>
+
+                                    </blockquote>
+                                </li>
+                                <li>
+                                    <b>Lista não-ordenada (.ul> ./ul>):</b> tem as mesmas características da lista ordenada, sendo necessária uma lista filha, porém não apresenta números na frente dos itens e sim marcadores.
+                                    <blockquote>
+                                        <b><u>Ex2:</u></b><br>
+                                        
+                                        ul><br>
+                                        li> cabeça /li><br>
+                                        li> ombro /li><br>
+                                        li> pé /li><br>
+                                        /ul><br>
+
+                                        <b><u>Resultado:</u></b><br>
+
+                                        <ul>
+                                        <li> cabeça </li>
+                                        <li> ombro </li>
+                                        <li> pé </li>
+                                        </ul>
+
+                                    </blockquote>
+                                </li>                           
+                            </ul>
+                    <h3>
+                        <a name="#ligacoes"><strong><u>Links</u></strong></a>
+                    </h3>
+                    <h6><a href="indice">[VOLTAR]</a></h6>
+                        <p>São formas de navegar ou ligar a página dentro dela mesma ou a outros sites. A tag de ligação é a <i>ancor</i> <mark>'a'</mark>.
+                        </p>
+                        <ul>
+                            <li>O <mark>'href'</mark> é um atributo específico da tag <i>ancor</i>. Ele indica o endereço de destino a ser ligado.</li>
+                            <li>Outro atributo é o <mark>'target'</mark>, ele indica quando a página a ser ligada pelo 'href' vai abrir na mesma aba do site ou em outra aba, antigamente era usado os valores  '_top' e '_parent' para fazer retrocompatibilidade, mas hoje estão em desuso. Para abrir a página na mesma aba o valor a ser selecionado é o <b>'_self'</b> e para abrir em outra aba o valor é <b>'_blank'</b>.</li>
+                            <blockquote>
+                                Ex: .a href=”xxxx”> Nome que vai aparecer na página ./a>
+                            </blockquote>
+                            <li>O <mark>title</mark> é outro atributo da tag ancor que faz com que ao se passar o mouse sobre o nome do link será exibido um balão com a informação gerada por esse atributo.
+                            </li>
+                            <li>Ainda dentro da tag de ligação podemos ligar um palavra/texto a outra palavra/texto dentro da própria página, assim dentro dessa tag utiliza-se o atributo <u>name= “#nome ao qual será lido”</u> e o valor é acompanhado com o símbolo '#' para demonstrar que será referenciado pelo  <u>href= “nome citado no atributo name”</u> pelo atributo 'href' acompanhado do valor que é o mesmo nome do valor do atributo <i>name</i> sem o acompanhamento do símbolo '#'.
+                            </li>
+                            <blockquote>
+                                Ex:<br> 
+                                .a name=”#exemplo1”>Exemplo ./a><br>
+                                <a name=”#exemplo1”>Exemplo</a><br>
+                                .a href=”exemplo1”>Exemplo ./a><br>    
+                                <a href=”exemplo1”>Exemplo</a>
+
+                            </blockquote>
+                        </ul>
+                
+            <h3>
+            <strong><u>TRABALHANDO COM FORMULÁRIOS</u></strong>
+            </h3><br>
+                
+            <ol>
+                <h3><li><strong><u>tag form</u></strong></li></h3><br>
+                    <p>São trechos no HTML, em formato de formulário, onde o usuário coloca informações a serem enviadas e processadas por um DB. Essa tag tem abertura e fechamento.</p><br>
+                            <blockquote>
+                                Ex:<br> <br>
+                                .form name:"signup" method="post ou get" target="_blank ou _self" autocomplete= "on ou off" onsubmit="alert('Enviei o formulário')action="https://url da página"> <br>
+                                        Nome: .input type=”text” name=”name” /> .br> <br>
+                                        Idade: .input type=”number” name=”age” /> .br> <br>
+                                        Senha: .input type=”password” name=”password” /> .br> <br>
+                                    .Button type=”submit”> Enviar ./Button> <br>
+                                ./form> <br>
+                            ./body>
+
+                            </blockquote>
+                        <ul>
+                            <li >
+                                O atributo <b><u>'name'</u></b> é para nomear  a tag <u>'form'</u>;
+                            </li>
+                            <li>
+                                O atributo <b><u>'action'</u></b> envia o formulário para o site mostrado em seu valor, desde que tenha autorização; 
+                            </li>
+                            <li>
+                                O atributo <b><u>'method'</u></b> com os valores <u>'GET'</u> ou <u>'POST'</u>, sendo o <u>'GET'</u> uma forma menos segura de enviar o formulário, pois os dados aparecem na barra de endereço da URL, inclusive a senha digitada, já o método <u>'POST'</u> envia os dados de forma encapsulada ao servidor, onde somente o servidor vai poder desincriptar o formulário;
+                            </li>
+                            <li>
+                                O atributo <b><u>'target'</u></b> é para abrir o formulário, sendo que aberto na mesma aba utiliza o valor<u>'_self'</u> ou em outra aba usando o valor <u>'_blank'</u>;
+                            </li>
+                            <li>
+                                O atributo <b><u>'autocomplete'</u></b>  pode ter o valor <u>'on'</u> que faz com que os valores dos campos se autocompletam ou <u>'off'</u> para completar os dados mecanicamente;
+                            </li>
+                            <li>
+                                Outro atributo usado é o <b><u>'onsubmit'</u></b> com o valor <u>=”alert ('Enviei o formulário')”</u> e uma mensagem entre parênteses, esse atributo revela a informação ao usuário quando o botão 'enviar' é clicado. (O 'alert' e sua mensagem já são mais usuais na implementação com javaScript);
+                            </li>
+                            <li>
+                                Entre a abertura e o fechamento do 'form', é dado o <b><u>NOME</u></b> do campo, acompanhado da abertura da tag <b><u>'input'</u></b> que é o campo em si para preenchimento dos dados;
+                            </li>
+                            <li>
+                                Na tag 'input' o atributo <b><u>'type'</u></b> especifica qual o tipo de dado poderá ser editado dentro do campo, podendo ser os valores: <u>'text'</u> para dados em texto, <u>'number'</u> para dados em números, <u>'password'</u> para senhas, existem outros valores para o 'type' e podem ser encontrados <a href=”https://www.w3school.com”>W3Schools</a>;
+                            </li>
+                            <li>
+                                E o atributo <b><u>'name'</u></b> que serve para nomear a tag 'input'. Outros atributos da tag 'input' estarão no próximo tópico.
+                            </li>
+                        </ul>
+                <h3>
+                    <li><strong><u>tag input</u></strong></li>       
+                </h3><br>
+                    <p>Essa tag é para adicionar o campo ou espaço para ser editado os dados a serem enviados a um DB.</p>
+                    <ul>
+                        <li>
+                             <b><u>label:</u></b> essa tag tem abertura e fechamento, sua função é atribuir nome aos campos criados pelo 'input';
+                        </li>
+                        <li>
+                            <b><u>type: </u></b> Na tag 'input' esse atributo  especifica qual o tipo de dado poderá ser editado dentro do campo, podendo ser os valores: <u>'text'</u> para dados em texto, <u>'number'</u> para dados em números, <u>'password'</u> para senhas, nos tópicos abaixo encontram-se mais alguns valores desse atributo, mais existem outros valores para o 'type' que podem ser conferidos na página da <a href=”https://www.w3school.com”>W3Schools</a>;
+                            <blockquote>
+                                EX: <br>
+                                
+                                .label> Nome ./label><br>
+                                .input type=”text”/> <br><br>
+                                <label> Nome </label>
+                                <input type=”text”/>
+                            </blockquote>
+                            <p><mark>Observação:</mark> ainda no atributo 'type', o valor <b><u>'number'</u></b> cria um campo na página onde o tipo de dados inseridos são em formato de número. Os atributos <u>'min'</u> e <u>'max'</u> especificam o valor mínimo e máximo que poderão ser preenchidos no campo e <u>'set'</u> denomina de quanto em quanto as numerações são mostradas.</p>
+                            <blockquote>
+                                EX: <br>
+                                
+                                .label> Valores ./label><br>
+                                .input type=”number” min=”0” Max=”99” set= “5”/><br><br>
+                                <label> Valores </label>
+                                <input type=”number” min=”0” Max=”99” set= “5”/>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <b><u>button:</u></b> Ainda na tag 'input'o atributo 'type' pode receber o valor <b><u>'button'</u></b> que cria um botão clicável e que é acompanhado pelo atributo <b><u>'value'</u></b> identificador do nome desse botão;
+                             <blockquote>
+                                EX: <br>
+                                .label> Botão  ./label><br>
+                                .input type="button" value="Enviar"/><br><br> 
+                              
+                                <label> Botão:</label>
+                                <input type="button" value="Enviar">
+                            </blockquote>
+                             
+                        </li>
+                        <li>
+                            <b><u>range:</u></b> o valor 'range' mostra uma barra interativa que aumenta e diminui na horizontal um valor numérico  através do atributo 'min' e 'máx' e os valores adicionados.
+                            <blockquote>
+                                EX: <br>
+                                .label> Barra  ./label><br>
+                                .input type="range" min="0" Max="100"/> .<br><br> 
+                              
+                                <label> Barra:</label>
+                                <input type="range"e min="0" max="100" />
+                            </blockquote>
+                        </li>
+                        <li>
+                            <b><u>color:</u></b> o valor 'color' cria um campo preenchido com cor;
+                            <blockquote>
+                                EX: <br>
+                                .label> Color: ./label><br> 
+                                .input type=”color” /><br><br> 
+                              
+                                <label> Color:</label>
+                                <input type="color"/>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <b><u>e-mail:</u></b> o valor 'email' cria um campo para preencher com e-mail e emite uma mensagem característica de cada navegador caso o campo esteja preenchido errado. O preenchimento deve constar de '@' para reconhecer o e-mail;
+
+                            <blockquote>
+                                EX: <br>
+                                .label> e-mail: ./label><br> 
+                                .input type="email" /><br><br> 
+                              
+                                <label> Color:</label>
+                                <input type="email"/>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <b><u> url:</u></b> o valor 'url' cria um campo para preencher com a url do site e emite uma mensagem característica de cada buscador caso o campo esteja preenchido errado. O campo da 'url' tem que possuir inicialmente o 'http' e o 'www';
+                            <blockquote>
+                                EX: <br>
+                                .label> URL: ./label> <br>
+                                .input type="url" /> <br><br>
+                                                          
+                                <label> URL:</label>
+                                <input type="url"/>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <b><u> date:</u></b> o valor 'date' cria um campo que preenche com data de acordo com cada buscador;
+                            <blockquote>
+                                EX: <br>
+                                .label> Data: ./label> <br>
+                                .input type="date" /> <br><br>
+                                                          
+                                <label> Data:</label>
+                                <input type="date"/>
+                            </blockquote> 
+                        </li>
+                        <li>
+                            <b><u> week:</u></b> o valor 'week' cria um campo que preenche a semana do ano;
+                            <blockquote>
+                                EX: <br>
+                                .label> Semana: ./label> <br>
+                                .input type="week" /> <br><br>
+                                                          
+                                <label> Semana:</label>
+                                <input type="week"/>
+                            </blockquote> 
+                        </li>
+                        <li>
+                            <b><u> month:</u></b> o valor 'month' cria um campo que preenche o mês do ano;
+                            <blockquote>
+                                EX: <br>
+                                .label> Mês: ./label> <br>
+                                .input type="month" /> <br><br>
+                                                          
+                                <label> Mês:</label>
+                                <input type="month"/>
+                            </blockquote> 
+                        </li>
+                        <li>
+                            <b><u> checkbox:</u></b> o valor 'checkbox' cria um campo de preenchimento para valores booleanos, pode-se ter várias seleções ao mesmo tempo;
+                            <blockquote>
+                                EX: <br>
+                                .label> Caixa de Opção: ./label> <br>
+                                .input type="checkbox" /> <br><br>
+                                                          
+                                <label> Caixa de Opção1:</label>
+                                <input type="checkbox"/><br>
+                                <label> Caixa de Opção2:</label>
+                                <input type="checkbox"/>
+                            </blockquote> 
+                        </li>
+                        <li>
+                            <b><u> checkbox:</u></b> o valor 'radio' cria um campo de seleção para valores booleanos, porém a escolha do campo se dá apenas para uma opção;
+                            <blockquote>
+                                EX: <br>
+                                .label> Caixa de Seleção: ./label> <br>
+                                .input type="radio" name="border" value="sim">Sim<br>
+                                                          
+                                <label> Opção1:</label>
+                                <input type="radio" name="caixa" value="sim"/> Sim <br>
+                                <label> opção2:</label>
+                                <input type="radio" name="caixa" value="nao"/> Não
+                            </blockquote>
+                        </li>
+                        <li>
+                            <b><u> hidden:</u></b> o valor 'hidden' cria um campo para preenchimento oculto sem a marcação de bordas;
+                            <blockquote>
+                                EX: <br>
+                                .label> Caixa Oculta: ./label> <br>
+                                .input type="hidden" /> <br><br>
+                                                          
+                                <label> Caixa oculta:</label>
+                                <input type="hidden"/><br>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <b><u> file:</u></b> o valor 'file' cria um campo para buscar e enviar um arquivo qualquer do desktop para outro meio;
+                            <blockquote>
+                                EX: <br>
+                                .label> Arquivo: ./label> <br>
+                                .input type="file" /> <br><br>
+                                                          
+                                <label> Arquivo:</label>
+                                <input type="file"/><br>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <b><u> search:</u></b> o valor 'search' cria um campo que preenche com nome de alguma palavra a ser buscada;
+                            o;	label> Search:  ./label> .input type=”search” /> . br> /*
+                            <blockquote>
+                                EX: <br>
+                                .label> Buscar: ./label> <br>
+                                .input type="search" /> <br><br>
+                                                          
+                                <label> Buscar:</label>
+                                <input type="search"/><br>
+                            </blockquote>
+                        </li>
+                    </ul>
+                <h3>
+                    <li><strong><u>Tags  chekbox e radio</u></strong></li>
+                </h3>
+                <p>São tags que acompanham um 'input' de selecionamento de opções, sejam, multiplas como é o caso do <u>'checkbox'</u> ou de apenas uma escolha como é o caso do <u>'radio'</u>; </p>
+                <blockquote>
+                    EX: <br>
+                    .head>
+                        .title> Formulário de Cadastro./title>
+                    ./head>
+                    .body>
+                        .form method="post">
+                            .h3>Você selecionou: Pizza de calabresa./h3><br>
+                            .p>Quais Opcionais você deseja?./p><br><br>
+                            
+                            .input type="checkbox" name="opcional[]" value="queijo"> + queijo <br>
+                            .input type="checkbox" name="opcional[]" value="calabresa"> + calabresa <br>
+                            .input type="checkbox" name="opcional[]" value="azeitona"> + azeitona <br><br>
+
+                            .p>Borda recheada?./p><br><br>
+
+		                    .input type="radio" name="border" value="sim">Sim <br>
+		                    .input type="radio" name="border" value="nao”>Não <br><br>
+		
+                            .p> Bebidas .p><br><br>
+		
+                            .input type="radio" name="bebida" value="suco">Suco <br>
+		                    .input type="radio" name="bebida" value="refrigerante"> Refrigerante <br><br>
+		
+		                    .button tupe="submit"> Enviar Pedido ./Button>
+	                    ./form>
+                    ./body>
+                            <p>Quais Opcionais você deseja?</p>                            
+                            <input type="checkbox" name="opcional[]" value="queijo"> + queijo <br>
+                            <input type="checkbox" name="opcional[]" value="calabresa"> + calabresa <br>
+                            <input type="checkbox" name="opcional[]" value="azeitona"> + azeitona <br><br>
+
+                            <p>Borda recheada?</p>
+		                    <input type="radio" name="border" value="sim">Sim <br>
+		                    <input type="radio" name="border" value="nao"> Não <br><br>
+		
+                            <p> Bebidas?<p>		
+                            <input type="radio" name="bebida" value="suco">Suco <br>
+		                    <input type="radio" name="bebida" value="refrigerante"> Refrigerante <br><br>
+		
+		                    <button tupe="submit"> Enviar Pedido </Button>
+                </blockquote>
+                    <ul>
+                        <li>
+                            No exemplo acima o valor 'post' do atributo 'method' acompanhado do atributo 'name' da tag 'input' sequente, valorado de uma opção seguida de um '[]' sugere o formato de uma lista para a linguagem de back-end, assim os dados dos formulários são encriptados, não aparecendo no barramento de endereço do buscador; ao contrário o valor 'get' mostra essas informações no barramento de endereço da URL;
+                        </li>
+                        <li>
+                            O sinal de [] mostra para a linguagem back-end que o valor 'opcional' é uma lista;
+                        </li>
+                                                
+                    </ul>
+                <h3>
+                    <li><strong><u>Tag button e seus tipos</u></strong></li>
+                </h3>
+                    <blockquote>
+                        EX: <br>
+                        .form method="post"><br>
+                            .label>Nome: ./label> .input type="text" name="name" /> <br>
+                            .label>Idade: ./label> .input type="number" name="age" /> <br>
+                            .label>Senha: ./label> .input type= "password" name= "password" /> <br>
+                            .button type="button" onclick="alert ('passei aqui')"> Clicável ./button><br>
+                            .button type="button" onmouseover="alert ('passei aqui')"> Clicável ./button><br>
+                            .button type="reset"> Limpar ./button> <br>
+                            .button type="submit"> Enviar ./button> <br>
+                        ./form> <br><br>
+                            <label>Nome:  </label> <input type= "text" name= "name" /> <br>
+                            <label>Idade: </label> <input type= "number" name= "age" /> <br>
+                            <label>Senha: </label> <input type= "password" name= "password" /> <br>
+                            <button type= "button" onclick="alert ('passei aqui')"> Clicável </button><br>
+                            <button type="button" onmouseover="alert ('passei aqui')"> Clicável </button><br>
+                            <button type="reset">Limpar </button> <br>
+                            <button type="submit">Enviar </button> <br>
+                    </blockquote>
+                        <p><u>Observação:</u></p>
+                        <p>o valor <u>'button'</u> da tag 'button' cria um botão clicável simples. O atributo <u>'onclick'</u> e <u>'onmouseover'</u> com o valor <u>'alert'</u> cria um javaScript com uma msg(passei aqui), o primeiro com um click e o segundo quando o mouse passar por cima do botão.</p>
+                        <p>o valor <u>'reset'</u> limpa o preenchimento dos campos acima quando há um click no botão 'Limpar'</p>
+                        <p>o valor <u>'submit'</u> do atributo 'type' apenas envia os dados informados nos campos</p>
+                <h3>
+                    <li><strong><u>Tag SelectBox ou ComboBox e seus tipos</u></strong></li>
+                </h3>
+                    <blockquote>
+                        EX:<br> <br>
+                        .form onsubmit="" method="get"> <br>
+
+                        .label> Nome: ./label>
+                        .input type="text" name="name" /> <br>
+
+                        .label>Cargo: ./label>
+
+                        .select name:"role" multiple>
+                            .option value=""> Selecione o cargo ./option>
+                            .option value="presidente"> Presidente ./option>
+                            .option value="diretor"> Diretor ./option>
+                            .option selected value="gerente"> Gerente ./option> 
+                        ./select> <br> <br>
+
+                        .button type= "submit"> Enviar ./button>
+                                             
+                        ./form> <br><br>
+
+                        <label> Nome: </label>
+                        <input type="text" name="name" /> <br>
+
+                        <label>Cargo: </label>
+
+                        <select name:"role">
+                            <option selected value=""> Selecione o cargo </option>
+                            <option value="presidente"> Presidente </option>
+                            <option value="diretor"> Diretor </option>
+                            <option value="gerente"> Gerente </option> 
+                        </select> <br> <br>
+
+                        <button type= "submit"> Enviar </button>
+
+
+                    </blockquote>
+
+                    <ul>
+                        <li>
+                            O valor <u>'submit'</u> do atributo 'type' apenas envia os dados informados nos campos dos formulários para DB;
+                        </li>
+                        <li>
+                            A tag <u>'select'</u> abre um campo com seta de seleção de dados pré fixados e o atributo <u>'name'</u> recebe um valor <u>'role'</u> para a rolagem entre os nomes pré-fixados;
+                        </li>
+                        <li>
+                            O Atributo <u>'multiple'</u> é uma forma de poder selecionar mais de um nome pré fixado, porém o formato da caixa fica aberto permanentemente, sem a rolagem lateral;
+                            <blockquote>
+                                Ex:<br>
+ 
+                                .select name:"role" <b>multiple</b>>
+                            </blockquote>
+                        </li>
+                        <li>
+                            A tag <u>'option'</u> é a tag filha da tag 'select' e define os valores para a pré seleção do valor 'role', essa tag usa um atributo <u>'value'</u> que identifica a tag 'option', inclusive para utilização do back-end;
+                        </li>
+                        <li>
+                            o atributo <u>'selected'</u> serve para que um valor, por exemplo gerente, se apresente fixo no campo;
+                            <blockquote>
+                                EX: <br>
+                                .option <b>selected</b> value="gerente"> Gerente 
+                                ./option>
+                            </blockquote>
+                        </li>
+                    </ul>
+                <h3>
+                    <li><strong><u><h3>Tag textarea</h3></u></strong></li>
+                </h3>
+                    <blockquote>
+                        EX: <br><br>
+
+                        .select name:"role"><br>
+                            .option value="presidente">Presidente ./                          option><br>
+                            .option value="diretor"> Diretor ./option><br>
+                            .option value="gerente"> Gerente ./option><br>
+                        ./select>
+                            .label>Assunto ./label> .input type="text" name:"subject"> <br>
+                            .label>Mensagem ./label><br>
+                            .textarea rows="20" cols="50"name="message"> ./textarea><br>
+                            .button type=”submit”>Enviar ./button><br><br>
+
+                            <select name:"role">
+                                <option value="presidente"> Presidente </option>
+                                <option value="diretor"> Diretor </option>
+                                <option value="gerente"> Gerente </option>
+                            </select>
+
+                            <label>Assunto </label> <input type="text" name:"subject"> <br>
+
+                            <label>Mensagem </label>
+                            <textarea rows="10" cols="30"name="message"> </textarea><br>
+
+                            <button type=”submit”>
+                            Enviar 
+                            </button><br><br>
+
+                            <p> O atributo <b>'rows'</b> para definir a altura do campo e <b>'cols'</b> para definir a largura do campo</p>                    
+                    </blockquote>
+                    <h3>
+                        <strong><u>ESTRUTURAÇÃO E FORMATAÇÃO DO HTML</u></strong>
+                    </h3><br>
+                    <p>
+                        O objetivo dessa parte do HTML5 é dar maiores condições de <u>acessibilidade</u>  a sua página, aprender como <u>adicionar fontes e cores</u> pelo HTML e preparar a <u>estrutura do código</u> para receber formatações do CSS.
+                    </p>
+                    <p>Logo abaixo está algumas tags que ajudarão na estrutura e formatação dos textos</p>
+                    <ol>
+                        <li> <strong><b> FORMATAÇÃO DE TEXTO</b></strong></li>
+                        <p>Essa parte do curso será trabalhada a formatação e semântica dos textos inseridos dentro de uma página HTML, assim serão demonstradas como inserir sublinhados, negritos, itálicos, ou seja, formas de deixar o texto mais atrativo para o usuário.</p>
+
+                        <p> Existem várias tags, as mais usadas são:</p>
+                            <ol>
+                                
+                                <li><u><b>.b> ./b> =</b></u></li>para negrito sem semântica;
+                                <li><u><b>.strong> ./strong> =</b></u></li>para negrito com semântica;
+                                <li><u><b>.i> ./i> =</b></u></li>coloca as palavras em itálico;
+                                <li><u><b>.u> ./u> =</b></u></li>sublinha as palavras;
+                                <li><u><b>.sup> ./sup> =</b></u></li>valor elevado a potência;
+                                <bloquote>EX: x^2</bloquote>
+                                <li><u><b>.sub> ./sub> =</b></u></li>valor sob o número; 
+                                <blockquote>EX: x_2</blockquote>
+                                <li><u><b>.mark> ./mark> =</b></u></li>estilo marca texto;
+                                <li><u><b>.font> ./font> =</b></u></li>formata a fonte do texto, nela pode ser usados atributos e valores, como: atributo <b>'color'</b> que muda a cor da fonte, exemplo de valor <u>red</u>, o atributo <b>'face'</b> que nomeia o estilo da fonte, por exemplo, o valor <u>arial</u>, etc. <br>
+                                <blockquote>
+                                    Ex: .font color=”red” face= “Arial”>
+                                </blockquote>
+                                <font color="blue" face="'trebuchet MS'" >Programe:</font>o seu futuro global agora!<br>
+                                <p><b>Observação:</b>nomes de fontes compostas têm que estar entre aspas simples e o mais indicado é usar a fonte através do HTML.</p>
+                                    <blockquote>Ex: 'trebuchet MS'</blockquote> 
+                            </ol>
+                        <li><strong><u>TAG DIV E SPAN</u></strong></li>
+                            <p>
+                                São tags de estrutura de página web, são delimitadoras de espaço no HTML para serem melhor formatadas pelo CSS.
+                            </p>
+                            <p>
+                                Abaixo um modelo de estrutura de site:
+                            </p>
+                            <img src="imagens/MODELO DE ESTRUTURA.png" alt="modelo de estrutura de site">
+                            <p>Cada campo criado dessa página, como: cabeçalho, menu, conteúdo e rodapé, são delimitados por uma <b>'div'</b>, porém ela é uma tag que não aparece na tela, mas tem por característica ser uma tag de <b><i>'display'</i></b> do tipo <b><i>'block'</i></b>, ou seja, ela ocupa toda parte horizontal da página.</p>
+                            <p>Curiosidade: o modelo de estrutura de página da DIO é no formato de </i></b>'landing pages'</i></b>, onde a rolagem é continua numa mesma página e geralmente quando tem algum botão clicável ela abrirá na mesma página.</p>
+                            <p>tag <b>'span'</b> não tem display em 'block', portanto é utilizada para quando não há necessidade de separação de textos.
+                            </p>
+                            <blockquote>
+                                Ex: <br>
+                                    DIO.ME com o ponto em 'div':<br>
+	                                .p> DIO .div> . ./div>me ./p>
+
+                            </blockquote>
+                            <p> DIO <div>.</div>me</p>
+
+                            <blockquote>
+                                Já com a tag 'span':<br>
+                                .p> DIO .span> . ./span>me ./p>
+                            <blockquote>
+                            <p>DIO <span>.</span>me</p>
+
+                        <li><strong><u>TAG FIELDSET</strong></u></li>
+                            <p> Essa tag, como as anteriores, é estrutural, ela trabalha em conjunto com a tag <b><i>'legend'</i></b> , sua função é segmentar determinada informação, como por exemplo:</p>
+                            <blockquote>
+                                .fieldset><br>
+                                    .legend>Dados Pessoais ./legend><br>
+                                        .div class=”row”><br>
+                                            .label>Nome: ./label> .input type=”text”/><br>
+                                            .label>E-mail: ./label> .input type=”texte”/><br>
+                                        ./div><br>
+                                        .div class=”row”><br>
+                                            .label>Profissão: ./label> .input type=”text”/><br>
+                                            .label>Empresa: ./label> .input type=”texte”/><br>
+                                        ./div><br>
+                                ./fieldset><br>
+                                .fieldset><br>
+                                    .legend>Endereço ./legend><br>
+                                        .div class=”row”><br>
+                                            .label>Logradouro: ./label> .input type=”text”/><br>
+                                            .label>Número: ./label> .input style=”width: 30px” type=”number” width=”10”/><br>
+                                        ./div><br>
+                                ./fieldset>
+                            </blockquote>
+                            <blockquote>
+                                <fieldset>
+                                <legend>Dados Pessoais </legend>
+                                <div class=”row”>
+                                    <label>Nome: </label> <input type=”text”/>
+                                    <label>E-mail: </label> <input type=”texte”/>
+                                </div>
+                                <div class=”row”>
+                                    <label>Profissão: </label> <input type=”text”/>
+                                    <label>Empresa: </label> <input type=”texte”/>
+                                </div>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Endereço </legend>
+                                        <div class="row">
+                                            <label>Logradouro: </label> <input type="text"/>
+                                            <label>Número: </label> <input style="width: 30px" type="number" width="10"/>
+                                        </div>
+                                </fieldset>
+                            </blockquote>
+                            <p><b><u>Observação:</u></b> esse formulário codificado acima deve ser formatado em CSS para que sua apresentação fique mais atrativa para o usuário.</p>
+
+                        <li><strong><u>TAG ENBEDS</u></strong></li>
+                            <p>Essa tag não é mais usual, mais o objetivo dela é carregar mídias externas na página, porém existem tags mais modernas para serem usadas.</p><br>
+                                Ex:                     
+                                    .embed src=”trailer.mp4” width=”400” heigth=”250”>
+                                    
+                                <p> Observação: hoje em dia é mais usual a tag <b><i>'video'</i></b>.</p>
+                                Ex:
+                                    .video controls autoplay width=”400” heigth=”250”>
+                                        .source src-“trailer.mp4”>
+                                    ./video> <br>
+                                    <video controls autoplay width=”400” heigth=”250”>
+                                    <source src=“trailer.mp4”>
+                                    </video>
+
+                        <li><strong><u>TAG IFRAME</u></strong></li>
+                            <p>Ela serve para abrir outars páginas de conteúdo próprio ou de outros conteúdos dentro da sua página. A vantagem é que a página gerada quando atualizada pelo servidor externo é também atualizada.</p>
+                            <blockquote>
+                                EX:
+                                    .iframe src= “HTTPS:// www.google.com/maps/embed”> ./iframe>  
+                            </blockquote>
+
+                            <p>Para adquirir o endereço de <b><i>'iframe'</i></b>, clique com o botão direito no vídeo, depois compartilhar e incorporar, copiar o caminho e colar no código do HTML.</p> 
+ 
+                            <p><b><u> Observação:</u></b> Essa tag é sensível aos quesitos de segurança.</p>
+
+                        <li><stong><u>CORES</u></stong></li>
+                        <p> Em cada navegador, de acordo com a <a href="https://w3schools.com">w3schools</a>, existem aproximadamente 140 nomes de cores disponíveis e elas variam de navegador pra navegador.</p>
+                        <p>As cores podem ser aplicadas através do nome das mesmas ou pelos valores abaixo:</p>
+                        <ul>
+                            <li><strong><u>RGB:</u></strong> combinação de vermelho, verde e azul (red, green, blue);</li>
+                                <blockquote>
+                                    EX: rgb (150, 28, 230)
+                                </blockquote>
+                            <li><strong><u>HEX:</u></strong> combinação de vermelho, verde e azul, mas descrito em hexadecimal;</li>
+                                <blockquote>
+                                    EX: 
+                                    #FF0000 é vermelho, #00FF00 é verde e #0000FF é azul;
+                                    Suas medidas são realizadas da seguinte forma:
+                                </blockquote>
+                                <img src="imagens/cores hexadecimal.png" alt="modelo de composição de cores hexadecimais">
+                            <li>
+                                <strong><u>HSL:</u></strong> Matiz (HUE), Saturação (Saturation) e Iluminação (lighten). 
+                                <p>A matiz tem os valores onde 0 é vermelho, 120 é verde e 240 é azul;</p>
+                                <blockquote>EX: As cores vão de 0 a 360, onde de 0 a 119 é vermelho, 120 a 239 é verde e 240 a 360 é azul, a saturação é o segundo campo e é medido em porcentagem e o terceiro campo é o brilho também em porcentagem. <mark>hsl(240, 50%, 60%);</mark></blockquote>
+                            </li>
+                            <li>
+                                <strong><u>RGBA:</u></strong> Mesmo que RGB, porém adicionado canal Alpha (transparência);
+                                <blockquote>
+                                    EX: rgba (150, 28, 230, 0.6), onde a intensidade de transparência do ,<b>'a'</b> vai de 0 a 1.
+                                </blockquote>
+                            </li>
+                            <li>
+                                <strong><u>HSLA:</u></strong> Mesmo que HSL, porém adicionado canal Alpha (transparência);
+                                <blockquote>
+                                    EX: hsla(240, 50%, 60%, 0.7), onde a intensidade de transparência do <b>'a'</b> vai de 0 a 1.
+                                </blockquote>
+                            </li>
+                        </ul>
+                            <p><strong>Observação:</strong> caso queira visualizar as cores, basta digitar o formato da cor no buscador do site <a href="https://www.w3schools.com">w3schools</a> para ser gerado uma página de cálculo de cores.</p>
+                    </ol>
+                <h3>
+                    <strong><u>TRABALHANDO COM MÍDIAS</u></strong>
+                </h3><br>
+                    <ol>
+                        <li><strong><u>TAG IMG</u></strong></li>
+                            <p>Essa tag captura imagens de arquivos da sua máquina local ou de websites.</p>
+                            <p>O exemplo de código abaixo mostra como fazer a captura da imagem.</p>
+                            <blockquote>
+                                .body style=”background-color: black”><br>
+                                .img src=”endereço do site ou caminho do arquivo local da imagem” ><br>
+                                .img title=”nome aparente ao passar do mouse em cima da imagem” alt=”descrição detalhada da imagem para acessibilidade”>
+                            </blockquote>
+                                <body style="background-color:white"><br>
+                                <img src="imagens/leão.jfif" title="ReiDaSelva" alt="Leão digital que representa o Rei da Selva" width="10%"><br>
+                                </body>
+                            <ul>
+                                <p><strong><u>Observação:</u></strong>Existem diversas extensões de imagens, como: gif, jpg, png, svg e outras. </p>
+                                <li><strong>gif:</strong> a imagem tem movimento, porém possui baixa definição na sua expansão e é um arquivo muito pesado;</li>
+                                <li><strong>jpg:</strong> é uma imagem compactada, opaca, leve, porém de baixa resolução;</li>
+                                <li><strong>png:</strong> tem como características: animação, fundo transparente e compressão sem perda de qualidade, é um pouco mais pesada do que o formato 'jpg';</li>
+                                <li><strong>svg:</strong> é um tipo vetorial, não perde resolução, mais  direcionado a construção de logos e desenhos, por conta dos pontos vetoriais e por não ser dimensionados por pixels.O formato svg, pode ser utilizado como tag; 
+                                    <blockquote>  .svg> PataCachorro ./svg></blockquote><br>
+                                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                    width="50px" height="50px" viewBox="0 0 1280.000000 1232.000000" title="PataCachorro" preserveAspectRatio="xMidYMid meet">
+                                    <g transform="translate(0.000000,1232.000000) scale(0.100000,-0.100000)"
+                                    fill="#00ff00" stroke="none">
+                                    <path d="M8425 12286 c-163 -42 -254 -75 -378 -137 -487 -242 -884 -727 -1109
+                                    -1354 -97 -272 -147 -491 -184 -815 -28 -252 -31 -464 -9 -654 86 -733 432
+                                    -1310 940 -1563 310 -156 606 -178 889 -66 654 257 1149 839 1390 1635 115
+                                    381 160 830 121 1218 -29 295 -43 386 -76 510 -98 365 -310 716 -563 928 -203
+                                    171 -392 262 -636 307 -166 31 -237 29 -385 -9z"/>
+                                    <path d="M3813 12245 c-398 -72 -779 -397 -998 -850 -94 -196 -143 -370 -181
+                                    -645 -25 -177 -25 -593 -1 -785 114 -900 530 -1644 1154 -2061 129 -86 341
+                                    -191 484 -239 104 -35 125 -38 249 -43 96 -3 161 0 225 12 290 50 554 205 753
+                                    441 239 284 394 664 454 1115 16 122 16 532 -1 670 -96 798 -385 1437 -852
+                                    1885 -223 214 -449 352 -729 446 -200 67 -387 85 -557 54z"/>
+                                    <path d="M11399 8595 c-405 -66 -764 -253 -1083 -564 -210 -206 -376 -432
+                                    -517 -705 -173 -336 -252 -590 -321 -1036 -31 -203 -31 -502 0 -673 66 -358
+                                    205 -651 414 -872 185 -196 405 -314 653 -351 167 -25 406 5 633 81 808 270
+                                    1468 1185 1587 2200 8 72 15 150 15 174 0 25 5 82 12 128 10 71 9 105 -6 226
+                                    -36 293 -84 464 -191 682 -176 358 -471 612 -809 696 -105 26 -275 33 -387 14z"/>
+                                    <path d="M1105 8343 c-16 -2 -73 -13 -125 -24 -398 -89 -725 -373 -850 -741
+                                    -41 -123 -77 -278 -95 -413 -8 -66 -20 -154 -25 -195 -15 -109 -12 -187 10
+                                    -382 25 -215 41 -307 86 -478 96 -369 297 -766 540 -1070 88 -109 275 -296
+                                    384 -384 269 -215 590 -373 912 -447 139 -32 328 -30 463 5 372 97 692 407
+                                    833 807 37 104 76 293 92 446 16 145 8 511 -14 653 -139 881 -671 1649 -1422
+                                    2054 -187 100 -274 132 -438 161 -80 13 -269 18 -351 8z"/>
+                                    <path d="M6270 5899 c-781 -85 -1497 -417 -2078 -961 -156 -146 -245 -248
+                                    -414 -473 -429 -569 -774 -1171 -1011 -1760 -113 -283 -188 -530 -303 -1000
+                                    -40 -164 -47 -208 -52 -326 -16 -454 213 -896 596 -1146 229 -150 431 -201
+                                    764 -190 394 12 653 79 1448 375 600 223 879 298 1235 332 322 30 368 32 522
+                                    21 366 -28 672 -111 1213 -331 891 -361 874 -355 1040 -389 218 -45 401 -60
+                                    497 -42 26 6 95 17 153 27 318 50 600 210 774 438 148 193 206 398 206 716 -1
+                                    377 -114 751 -409 1355 -121 247 -185 354 -498 829 -703 1067 -1282 1688
+                                    -1983 2129 -375 235 -705 348 -1165 397 -106 12 -427 11 -535 -1z"/>
+                                    </g></svg><br>
+
+                                </li>
+                                <li>width=”000” é um atributo CSS usado para diminuir a imagem, ele pode ser utilizado na tag img.</li>
+                                <li>Os atributos <strong>title</strong> e <strong>alt</strong> dentro da tag img servem: o valor do 'title' é inserido para ser visto quando o mouse passar pela imagem e o valor 'alt' para descrição detalhada da imagem por robô para a acessibilidade a pessoas com deficiência.</li>
+                                <li>O atributo <strong>align</strong> alinha uma imagem a um texto.</li>
+                            </ul><br>
+
+                        <li><strong><u>TAG AUDIO</u></strong></li>
+                            <p>Exclusiva para áudio e é nativo do navegador, possui semântica enquanto lido por robô.</p>
+                            <blockquote>
+                                Ex:<br>
+                                .audio autoplay controls> .audio/><br>
+	                            .source src=”musical.mp3”/><br>
+	                            Seu navegador não tem suporte para esse arquivo.<!--mensagem caso o navegador não tenha acesso ao áudio--> 
+                                
+                            </blockquote>
+                            <audio autoplay controls> 
+                            <source src="musica/Slide Into The South.mp3"/>
+                            Seu navegador não tem suporte para esse arquivo.
+                            </audio>
+                            <p>Os atributos 'autoplay' serve para iniciar o áudio automaticamente e o 'controls' mostra os controles para a condução do áudio.</p>
+                            <p>A tag src (source) é tag filha da tag áudio</p>
+
+                        <li><strong><u>TAG VIDEO</u></strong></li>
+                            <p>Utiliza os recursos nativos do navegador para reproduzir um vídeo.</p>
+                            <blockquote>
+                            Ex: <br>
+                            .div><br>
+                                .video controls><br>
+                                    .source src=”clipe.mp4”/><br>
+                                    .source src=”clipe2.webm”/><br>
+                                    Seu navegador não suporta vídeo<br>
+                                ./vídeo><br>
+                            ./div>
+                            </blockquote>
+                            <div>
+                                <video controls>
+                                    <source src="videos/osg_T_004_r240P.mp4"/>
+                                    <source src=”clipe2.webm”/>
+                                    Seu navegador não suporta vídeo
+                                </vídeo>
+                            </div>
+                            <p>
+                            <strong><u>Observação:</u></strong> As extensões mp4 e webm, são as únicas aceitas na tag video.
+                            </p>
+
+                        <li><strong><u>TAG TRACK</u></strong></li>
+                            <p>Track são legendas que são utilizadas na tag vídeo, através de extensões '.vtt' . Ela coloca o inicio da legenda e o final da legenda.</p>
+                            <blockquote>
+                            .div><br>
+                                .video controls><br>
+                                    .source src=”clipe.mp4”/><br>
+                                    .source src=”clipe2.webm”/><br>
+                                    .track src=”legenda.vtt” kind= “captions” srclang=”en”/><br>
+                                    . .track default src=”legenda-pt-br.vtt” kind= “captions” srclang=”pt-br”/><br>
+                                    Seu navegador não suporta vídeo<br>
+                                ./vídeo><br>
+                            ./div>
+                            </blockquote>
+                            <div>
+                                <video controls><br>
+                                    <source src="videos/osg_T_004_r240P.mp4"/><br>
+                                    <source src="clipe2.webm"/><br>
+                                    <track default src="legendas/importancia.vtt" kind="captions" srclang="pt-br"/><br>
+                                   
+                                    Seu navegador não suporta vídeo<br>
+                                </vídeo>
+                            </div>
+                                <p>
+                                    <strong><u>Observação:</u></strong>
+                                    <ul>
+                                        <li>O atributo <i>'default'</i> informa que aquela tag vai iniciar primeira, por padrão; 
+                                            <blockquote>Ex: track default..</blockquote>
+                                        </li>
+                                        <li>O Atributo <strong>'kind'</strong> tem diversos valores: o <i>'caption'</i> serve para mostrar no vídeo a fala, conversa ou letra da musica, o <i>'descriptions'</i> é lido detalhadamente por robô sobre o que ocorre no vídeo, o <i>'chapters'</i> sserve para mostrar pedaços da leitura do vídeo determinado pelo desenvolvedor; 
+                                            <blockquote>Ex: kind= “captions”</blockquote>
+                                        </li>
+                                        <li>O atributo <strong>'srclang'</strong>  determina o valor da abreviatura de um idioma que será mostrada no ícone de configuração do vídeo. 
+                                            <blockquote>Ex: srclang=”pt-br”</blockquote>
+                                        </li>
+                                        <li>A busca da compatibilidade da extensão do clipe vai através da seqüência que ela é colocada se 'mp4' ou se 'webm' até a mensagem de não suporte pelo navegador;
+                                        </li>
+                                        <li>O arquivo da extensão '.vtt' é um arquivo de texto comum, ele pode ser editado no seguinte formato:
+                                            <blockquote>Ex: 00:00:11.000 --> 00:00:20.300<br>
+                                                        Ela foi pro céu...<br>
+                                                        Morreu!
+                                            </blockquote>
+                                        </li>
+                                    </ul>
+                                </p>
+
+                        <li><strong><u>TAG IFRAME</u></strong></li>
+                            <p>O 'iframe' é a evolução do 'enbed', ela serve para incorporar páginas externas ou vídeos externos dentro da sua página.</p>
+                            <p>O caminho para capturar o vídeo de uma página é: Abra a página/vídeo acesse compartilhar, depois incorporar e após copiar o caminho do 'iframe' que será disponibilizado e em seguida cole o caminho no local destinado ao 'iframe'.</p>
+                            <blockquote>
+                                Ex: .body> <br>
+	                                .iframe src=”caminho do vídeo alocado em site externo"> ./iframe> <br>
+                                    ./body>
+                            </blockquote>
+                                <div> <br>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/siwpn14IE7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                    </ol>
+                <h3>
+                    <strong><u>CRIANDO TABELAS</u></strong>
+                </h3> <br>
+                    <p>
+                        Tabelas são a formação tabular de colunas e linhas, onde o encontro dessas é denominado célula.</p>
+                    <p>
+                        A estrutura do site, antigamente, era feito no formato de tabelas, porém essa estrutura em um site tinha problemas com a <strong>semântica</strong> dos textos, portanto os robôs não conseguiriam ler corretamente o trecho do código do site, ou seja, não saberia do que se trataria. A leitura do HTML feita por esse robô é chamado de <strong>'web screping'</strong>. Essa é a base para o SEO que faz a leitura do HTML, identificando: títulos, parágrafos, formatações e semânticas para torná-las mais realçadas para o usuário</p>
+                    <p>
+                        Outro problema era o <strong>tamanho do arquivo</strong>, pois, nas tabelas o arquivo é maior do que em tags com a div e o span, que dependendo do tamanho do site pode fazer com que ele fique pesado e lento pra carregar as informações para o usuário.
+                    </p>
+                    <p>
+                       A <strong> acessibilidade</strong> também ficava prejudicada quando a tabela era utilizada para estruturar a totalidade do site, pois, o leitor de tela para acessibilidade para um deficiente visual, por exemplo, vai se perder semanticamente na hora de fazer a leitura do texto. 
+                    </p>
+                    <ol>
+                        <li><strong><u>TAG TABLE</u></strong></li>
+                        <li><strong><u>TAG TR</u></strong></li>
+                        <li><strong><u>TAGS TD e TH</u></strong></li>
+                        <li><strong><u>TAGS TBODY, THEAD E TFOOT</u></strong></li>
+                        <li><strong><u>ESTILIZANDO TABELAS</u></strong></li>
+                    </ol>
+                <h3>
+                    <strong><u>HTML SEMÂNTICO</u></strong>
+                </h3> <br>
+                <p>É o significado e definições destinados a dar mais sentido à estruturação do HTML. Assim as TAGS ganharam significado.</p>
+            </ol>
+           
+
+.
+
+ 
+</body>
+</html>
